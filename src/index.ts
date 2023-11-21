@@ -26,10 +26,6 @@ app.post('/filmes',async (req,res)=>{
     const salvaFilme = new SalvaFilme(bancoMongoDB)
     const resposta = await salvaFilme.execute(filme)
     res.status(201).send(filme)
-    // try{
-    // }catch(error){
-    //     res.status(400).send({"mensagem":"Erro ao cadastrar o filme"})
-    // }
 })
 
 app.get('/filmes/:id',(req,res)=>{
