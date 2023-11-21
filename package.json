@@ -7,7 +7,7 @@
     "dev": "tsx watch ./src/index.ts",
     "test": "vitest -w"
   },
-  "author": "Guilherme F. Terenciani",
+  "author": "Maíza Bianca",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.20",
