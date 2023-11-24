@@ -34,11 +34,11 @@ app.get('/filmes', async(req,res)=>{
     //usem o listarFilme para listar os filmes
     const listaFilme = new ListaFilme(bancoMongoDB)
     const filmes = await listaFilme.executar()
-    res.send(filmes)
+    res.send(filmes).status(200)
 
 })
 
-app.get('/filmes/:id', (req, res) => {
+app.delete('/filmes/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const filmeId = filmesCadastrados.find(Filme => Filme.id == id);
     if(!filmeId) return res.status(404).send("Filme não encontrado");
