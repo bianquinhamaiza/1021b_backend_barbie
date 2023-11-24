@@ -57,12 +57,6 @@ app.listen(3000,()=>{
 //Tenho que ter uma rota post para cadastrar um filme
 
 //Salvar em algum lugar o filme que foi cadastrado.
-type Filme = {
-    id:number,
-    titulo:string,
-    descricao:string,
-    imagem:string
-}
 let filmesCadastros:Filme[] = [];
 
 
