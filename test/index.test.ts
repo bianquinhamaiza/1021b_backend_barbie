@@ -13,7 +13,7 @@ describe.skip('Cadastro de filmes Express',()=>{
             descricao:'Filme dos herois da marvel',
             imagem:"https://live.staticflickr.com/7270/6976087418_59719341f5_b.jpg"
         }
-        //Passar isso para minha API
+        
         const resposta = await fetch(
                     'http://localhost:3000/filmes',
                     {
